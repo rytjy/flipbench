@@ -72,3 +72,7 @@ stored per row, so any row can be re-checked without re-running the model.
 - Two small 4-bit models; nothing here generalises to larger models.
 - No seed control, so run-to-run flips include sampling noise.
 - One machine, CPU only, temperature 0.2, 16-token answers.
+
+## License
+
+MIT, see LICENSE.
