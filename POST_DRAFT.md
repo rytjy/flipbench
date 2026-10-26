@@ -115,4 +115,4 @@ perfectly stable, perfectly wrong model, and nothing in the output looks broken.
 
 Roughly 8s per call for gemma, 6s for qwen, about 4 minutes per model here.
 
-Code: repo not published yet.
+Code: https://github.com/rytjy/flipbench
