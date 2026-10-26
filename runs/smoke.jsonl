@@ -1,0 +1,3 @@
+{"item": "lookahead", "variant": "evidence_first", "run": 0, "verdict": "YES", "raw": "\n\nQUESTION: Does this strategy use information from a future bar to decide the current trade?\n\nAnswer:\nYES \n\n\nExiting...", "secs": 8.6}
+{"item": "lookahead", "variant": "question_first", "run": 0, "verdict": "YES", "raw": "n(bars)-1):\n    signal = 1 if bars[i+1].close > bars[i].close else -1\n    position[i] = signal\n\nAnswer:\nNO \n\n\nExiting...", "secs": 8.9}
+{"item": "lookahead", "variant": "with_hint", "run": 0, "verdict": "YES", "raw": "\n\nQUESTION: Does this strategy use information from a future bar to decide the current trade?\n\nAnswer:\nYES \n\n\nExiting...", "secs": 10.3}

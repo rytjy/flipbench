@@ -1,0 +1,40 @@
+runs/gemma.jsonl
+  calls              36 over 18 groups
+  run-to-run flips   1 groups (5.6%) ['fee_named_other/evidence_first']
+  abstention         0/36 (0.0%)
+  exact accuracy     19/36 (52.8%)
+  YES rate           27/36 (75.0%)
+  always-YES baseline 18/36 (50.0%)
+  per layout:
+    evidence_first acc 7/12 = 58.3%
+    question_first acc 4/12 = 33.3%
+    with_hint      acc 8/12 = 66.7%
+  per item (E=evidence first, Q=question first, H=with hint; one char per run):
+    lookahead        E:YY | Q:NN | W:YY  LAYOUT-SENSITIVE
+    fee_missing      E:YY | Q:NN | W:YY  LAYOUT-SENSITIVE
+    grid_select      E:YY | Q:YY | W:YY  stable
+    fee_named_other  E:NY | Q:NN | W:YY  LAYOUT-SENSITIVE
+    rolling_ok       E:YY | Q:YY | W:NN  LAYOUT-SENSITIVE
+    label_shift      E:YY | Q:YY | W:YY  stable
+  items whose verdict changes with layout: 4/6 ['lookahead', 'fee_missing', 'fee_named_other', 'rolling_ok']
+
+runs/qwen.jsonl
+  calls              36 over 18 groups
+  run-to-run flips   0 groups (0.0%) []
+  abstention         0/36 (0.0%)
+  exact accuracy     18/36 (50.0%)
+  YES rate           36/36 (100.0%)
+  always-YES baseline 18/36 (50.0%)
+  per layout:
+    evidence_first acc 6/12 = 50.0%
+    question_first acc 6/12 = 50.0%
+    with_hint      acc 6/12 = 50.0%
+  per item (E=evidence first, Q=question first, H=with hint; one char per run):
+    lookahead        E:YY | Q:YY | W:YY  stable
+    fee_missing      E:YY | Q:YY | W:YY  stable
+    grid_select      E:YY | Q:YY | W:YY  stable
+    fee_named_other  E:YY | Q:YY | W:YY  stable
+    rolling_ok       E:YY | Q:YY | W:YY  stable
+    label_shift      E:YY | Q:YY | W:YY  stable
+  items whose verdict changes with layout: 0/6 []
+
